@@ -1,0 +1,25 @@
+{
+  "name": "chatsocket",
+  "version": "1.0.0",
+  "description": "socket.io chatroom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilsku/chatsocket.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Vilja Aspegren",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/vilsku/chatsocket/issues"
+  },
+  "homepage": "https://github.com/vilsku/chatsocket#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
