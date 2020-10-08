@@ -29,7 +29,7 @@ const { username, room } = Qs.parse(parsedSearch);
 
 console.log(username, room);
 
-const socket = io();
+const socket = io("http://10.114.32.80");
 
 //Join chatroom
 socket.emit("joinRoom", { username, room });
