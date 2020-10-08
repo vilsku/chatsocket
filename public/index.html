@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>campusChat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="join-container">
+    <header class="join-header">
+      <h1>CampusChat</h1>
+    </header>
+    <main class="join-main">
+      <form action="chat.html">
+        <div class="form">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter username..."
+            required
+          />
+        </div>
+        <div class="form">
+          <label for="room">Room</label>
+          <select name="room" id="room">
+            <option value="Karamalmi">Karamalmi</option>
+            <option value="Myllypuro">Myllypuro</option>
+            <option value="Myyrmäki">Myyrmäki</option>
+            <option value="Arabia">Arabia</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Join Chat</button>
+      </form>
+    </main>
+  </div>
+  </body>
+</html>
