@@ -29,7 +29,7 @@ const {
   getCurrentUser,
   userLeave,
   getRoomUsers,
-} = require("./utils/users");
+} = require("./utility/users");
 
 const app = express();
 const server = http.createServer(app);
