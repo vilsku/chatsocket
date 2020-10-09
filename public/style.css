@@ -53,7 +53,7 @@ a{
 }
 /* Chat */
 .chat-container {
-	max-width: 1100px;
+	max-width: 900px;
 	border-radius: 5px;
 	margin: 30px auto;
 	overflow: hidden;
