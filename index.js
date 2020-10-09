@@ -4,13 +4,13 @@ const path = require("path");
 const http = require("http");
 const express = require("express");
 const socketio = require("socket.io");
-const { formatMessage } = require("./utility/messages");
+const { formatMessage } = require("./src/messages");
 const {
   userJoin,
   getCurrentUser,
   userLeave,
   getRoomUsers,
-} = require("./utility/users");
+} = require("./src/users");
 
 const app = express();
 const server = http.createServer(app);
