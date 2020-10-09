@@ -89,6 +89,7 @@ a{
     padding: 10px;
     font-size: 20px;
     background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
 
 .chat-messages {
@@ -169,7 +170,8 @@ a{
 	font-size: 16px;
 	padding: 5px;
 	height: 40px;
-	width: 100%;
+    width: 100%;
+    border-radius: 5px;
 }
 .join-main select {
 	font-size: 16px;
