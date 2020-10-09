@@ -46,7 +46,7 @@ a{
     padding: 5px 15px;
     /* background: var(--light-color); */
     background: teal;
-    color: var(--dark-color-a);
+    color: var(--dark-color-b);
     border: 0;
     font-size: 17px;
     border-radius: 5px;
@@ -61,7 +61,7 @@ a{
 
 .chat-header {
 	background: var(--dark-color-a);
-	color: #fff;
+	color: teal;
 	padding: 15px;
 	display: flex;
 	align-items: center;
@@ -106,7 +106,7 @@ a{
 .chat-messages .message {
 	padding: 10px;
 	margin-bottom: 15px;
-	background-color: var(--light-color);
+	background-color: #BAACCD;
 	border-radius: 5px;
 	font-size: 20px;
 }
@@ -140,7 +140,7 @@ a{
     border-radius: 5px;
 }
 
-/* Join Page */
+/* chat join page */
 .join-container{
     max-width: 500px;
     margin: 80px auto;
