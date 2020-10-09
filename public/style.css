@@ -96,10 +96,6 @@ a{
     border-radius: 5px;
 }
 
-.chat-side ul li::before {
-    color: #BAACCD;
-}
-
 .chat-messages {
 	padding: 30px;
 	max-height: 500px;
