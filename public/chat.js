@@ -1,16 +1,5 @@
 'use strict';
-/*const socket = io('http://10.114.32.18');
-document.querySelector('form').addEventListener('submit', (event) => {
-  event.preventDefault();
-  const inp = document.getElementById('m');
-  socket.emit('chat message', inp.value);
-  inp.value = '';
-});
-socket.on('chat message', (msg) => {
-  const item = document.createElement('li');
-  item.innerHTML = msg;
-  document.getElementById('messages').appendChild(item);
-}); */
+
 const chatForm = document.getElementById("chat-form");
 const chatMessages = document.querySelector(".chat-messages");
 const roomName = document.getElementById("room-name");
@@ -23,48 +12,44 @@ const parsedSearch =
     : location.search;
 const { username, room } = Qs.parse(parsedSearch);
 
-/* const {username, room} = Qs.parse(location.search, {
-    ignoreQueryPrefix: true
-}); */
-
 console.log(username, room);
 
 const socket = io();
 
-//Join chatroom
+// join the chatroom
 socket.emit("joinRoom", { username, room });
 
-//Get room and users
+// get room and users
 socket.on("roomUsers", ({ room, users }) => {
   outputRoomName(room);
   outputUsers(users);
 });
 
-//Message from server
+// message from server
 socket.on("message", (message) => {
   console.log(message);
   outputMessage(message);
 
-  // Scroll down
+  // scroll down
   chatMessages.scrollTop = chatMessages.scrollHeight;
 });
 
-// Message submit
+// submit message
 chatForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  //Get message text
+  // get message text
   const msg = e.target.elements.msg.value;
 
-  //Emit message to server
+  // emit  the message to server
   socket.emit("chatMessage", msg);
 
-  //Clear input
+  // clear message input and move cursor to te input
   e.target.elements.msg.value = "";
   e.target.elements.msg.focus();
 });
 
-//Output message to DOM
+// output message to DOM
 function outputMessage(message) {
   const div = document.createElement("div");
   div.classList.add("message");
@@ -75,12 +60,12 @@ function outputMessage(message) {
   document.querySelector(".chat-messages").appendChild(div);
 }
 
-//Add room name to DOM
+// add current room name to DOM
 function outputRoomName(room) {
   roomName.innerText = room;
 }
 
-//Add users to DOM
+// add currently online users to DOM
 function outputUsers(users) {
   userList.innerHTML = `
         ${users.map((user) => `<li>${user.username}</li>`).join("")}
