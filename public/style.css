@@ -45,7 +45,7 @@ a{
     cursor: pointer;
     padding: 5px 15px;
     /* background: var(--light-color); */
-    background: goldenrod;
+    background: teal;
     color: var(--dark-color-a);
     border: 0;
     font-size: 17px;
@@ -53,7 +53,8 @@ a{
 }
 /* Chat */
 .chat-container {
-	max-width: 1100px;
+    max-width: 1100px;
+    height: 500px;
 	border-radius: 5px;
 	margin: 30px auto;
 	overflow: hidden;
