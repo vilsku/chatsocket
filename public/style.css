@@ -85,11 +85,19 @@ a{
     color: #BAACCD;
 }
 
+.chat-side ul {
+    list-style-type: circle;
+}
+
 .chat-side ul li {
     padding: 10px;
     font-size: 20px;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
+}
+
+.chat-side ul li::before {
+    color: #BAACCD;
 }
 
 .chat-messages {
