@@ -1,3 +1,16 @@
+'use strict';
+/*const socket = io('http://10.114.32.18');
+document.querySelector('form').addEventListener('submit', (event) => {
+  event.preventDefault();
+  const inp = document.getElementById('m');
+  socket.emit('chat message', inp.value);
+  inp.value = '';
+});
+socket.on('chat message', (msg) => {
+  const item = document.createElement('li');
+  item.innerHTML = msg;
+  document.getElementById('messages').appendChild(item);
+}); */
 const chatForm = document.getElementById("chat-form");
 const chatMessages = document.querySelector(".chat-messages");
 const roomName = document.getElementById("room-name");
@@ -16,7 +29,7 @@ const { username, room } = Qs.parse(parsedSearch);
 
 console.log(username, room);
 
-const socket = io("http://10.114.32.80");
+const socket = io();
 
 //Join chatroom
 socket.emit("joinRoom", { username, room });

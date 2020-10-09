@@ -1,7 +1,7 @@
 :root {
     --dark-color-a: #3b3b3b;
 	--dark-color-b: #191919;
-	--light-color: #C9E6EA;
+	--light-color: #c4c4c4;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -32,7 +32,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    background: var(--light-color);
+    background: var(--dark-color-b);
     margin: 20px
 }
 ul{
@@ -46,15 +46,15 @@ a{
     padding: 5px 15px;
     /* background: var(--light-color); */
     background: teal;
-    color: var(--dark-color-b);
+    color: var(--dark-color-a);
     border: 0;
     font-size: 17px;
     border-radius: 5px;
 }
 /* Chat */
 .chat-container {
-    max-width: 900px;
-    height: 1000px;
+    max-width: 1100px;
+    height: 500px;
 	border-radius: 5px;
 	margin: 30px auto;
 	overflow: hidden;
